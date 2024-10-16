@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket.IO Example</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script>
+        // Use Socket.IO to connect
+        const socket = io("http://localhost:5000/");
+
+        socket.on('connect', function(){
+            console.log('Connected to server');
+            socket.send("Hello, Server!");
+        });
+
+        socket.on("message", function(data){
+            console.log("Message from server: ", data);
+        });
+
+        socket.on("disconnect", function(){
+            console.log("Disconnected from server");
+        })
+    </script>
+</head>
+<body>
+    <h1>Check the console for messages!</h1>
+</body>
+</html>
