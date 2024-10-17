@@ -1,0 +1,13 @@
+digraph "Azure Architecutre" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Azure Architecutre" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"5212e4ac5ce94af6a0af24c6d3f0c47e" [label="Azure Load Balancer" height=1.9 image="C:\Users\10706030\Desktop\Flask_Practice\.venv\Lib\site-packages\resources/azure/network\load-balancers.png" shape=none]
+	"089157284819402794ee6f7c7dfca28e" [label="VM 1" height=1.9 image="C:\Users\10706030\Desktop\Flask_Practice\.venv\Lib\site-packages\resources/azure/compute\vm.png" shape=none]
+	cc7433671e2d40bbb4a932efa6ec2d11 [label="VM 2" height=1.9 image="C:\Users\10706030\Desktop\Flask_Practice\.venv\Lib\site-packages\resources/azure/compute\vm.png" shape=none]
+	ceb81b4cbc3f49c28e5e7efc317b744b [label="SQL Database" height=1.9 image="C:\Users\10706030\Desktop\Flask_Practice\.venv\Lib\site-packages\resources/azure/database\sql-databases.png" shape=none]
+	"5212e4ac5ce94af6a0af24c6d3f0c47e" -> "089157284819402794ee6f7c7dfca28e" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"5212e4ac5ce94af6a0af24c6d3f0c47e" -> cc7433671e2d40bbb4a932efa6ec2d11 [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"089157284819402794ee6f7c7dfca28e" -> ceb81b4cbc3f49c28e5e7efc317b744b [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	cc7433671e2d40bbb4a932efa6ec2d11 -> ceb81b4cbc3f49c28e5e7efc317b744b [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}

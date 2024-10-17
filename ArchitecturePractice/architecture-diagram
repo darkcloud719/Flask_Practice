@@ -1,0 +1,8 @@
+// Simple Architecture Diagram
+digraph {
+	A [label=Client]
+	B [label="Web Server"]
+	C [label="Database Server"]
+	A -> B
+	B -> C
+}
